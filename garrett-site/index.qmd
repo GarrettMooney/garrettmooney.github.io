@@ -1,14 +1,28 @@
 ---
-title: "garrett-site"
+sidebar: false
+description: "A collection of technical blogs about machine learning and data science."
+toc: true
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
+  date-format: short
+  feed: true
   filter-ui: false
-page-layout: full
-title-block-banner: true
+  type: table
+  sort-ui: false
+  sort: "date desc"
+  categories: false
+  fields: [date, title]
+  id: blog-listings
+  contents: [blog/posts]
+format:
+  html:
+    anchor-sections: true
 ---
 
+## Blog
 
+::: {#blog-listings}
+:::
+
+## Follow Me
+
+The best way to follow my activity is [Twitter](https://twitter.com/garrettrmooney).
