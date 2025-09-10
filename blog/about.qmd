@@ -1,19 +1,18 @@
 ---
 title: "About"
-image: profile.jpg
 about:
   template: jolla
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/garrettrmooney
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/in/garrettrmooney
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/garrettmooney
 
 ---
 
-About this blog
+Just a collection of my thoughts, projects, and writings.

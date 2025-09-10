@@ -2,14 +2,14 @@ project:
   type: website
 
 website:
-  title: "blog"
+  title: "Garrett's blog"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/garrettmooney
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/garrettrmooney
 format:
   html:
     theme:
