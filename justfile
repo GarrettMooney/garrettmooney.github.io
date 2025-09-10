@@ -38,17 +38,22 @@ new-env name display_name packages='':
 # remove a virtual environment and jupyter kernel
 # example: just rm-env data-analysis
 rm-env name:
-    #!/bin/bash
-    set -euxo pipefail
-
+    #!/usr/bin/env bash
     VENV_PATH=".venv-{{name}}"
     KERNEL_NAME="garrett-{{name}}"
 
-    echo "Removing venv at $VENV_PATH..."
-    rm -rf "$VENV_PATH"
+    # Check if venv directory exists
+    if [ -d "$VENV_PATH" ]; then
+        echo "Removing venv at $VENV_PATH..."
+        rm -rf "$VENV_PATH"
+    else
+        echo "Venv '$VENV_PATH' not found, skipping removal."
+    fi
 
-    echo "Removing Jupyter kernel '$KERNEL_NAME'..."
-    # The '|| true' is to prevent an error if the kernel doesn't exist
-    uvx jupyter kernelspec uninstall -y "$KERNEL_NAME" || true
-
-    echo -e "\nSuccessfully removed venv and kernel for '{{name}}'"
+    # Check if kernel exists
+    if uvx --from jupyter-client jupyter-kernelspec list | grep -q "$KERNEL_NAME"; then
+        echo "Removing Jupyter kernel '$KERNEL_NAME'..."
+        uvx --from jupyter-client jupyter-kernelspec uninstall -y "$KERNEL_NAME"
+    else
+        echo "Jupyter kernel '$KERNEL_NAME' not found, skipping removal."
+    fi

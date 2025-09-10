@@ -1,0 +1,31 @@
++ VENV_PATH=.venv-test
++ KERNEL_NAME=garrett-test
++ echo 'Removing venv at .venv-test...'
++ rm -rf .venv-test
++ uvx --from jupyter-core jupyter kernelspec list
++ grep -q garrett-test
+usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
+               [--paths] [--json] [--debug]
+               [subcommand]
+
+Jupyter: Interactive Computing
+
+positional arguments:
+  subcommand     the subcommand to launch
+
+options:
+  -h, --help     show this help message and exit
+  --version      show the versions of core jupyter packages and exit
+  --config-dir   show Jupyter config dir
+  --data-dir     show Jupyter data dir
+  --runtime-dir  show Jupyter runtime dir
+  --paths        show all Jupyter paths. Add --json for machine-readable
+                 format.
+  --json         output paths as machine-readable json
+  --debug        output debug information about paths
+
+Available subcommands: migrate troubleshoot
+
+Jupyter command `jupyter-kernelspec` not found.
++ echo 'Jupyter kernel '\''garrett-test'\'' not found, skipping removal.'
++ echo -e '\nSuccessfully removed venv and (if it existed) kernel for '\''test'\'''
