@@ -1,0 +1,14 @@
+# Git Worktree
+
+> Git worktree for quickly switching between branches
+
+Do I alrady have any worktrees?
+
+```{bash}
+git worktree list
+```
+
+Create a new worktree where:
+
+* the path for the new worktree is `.worktree/hotfix`
+* the commit/branch to use in worktree is `main`

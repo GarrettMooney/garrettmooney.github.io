@@ -1,6 +1,10 @@
 project:
   type: website
 
+jupyter: python3
+python:
+  path: ../.venv/bin/python
+
 website:
   title: "Garrett's Blog"
   page-footer:
