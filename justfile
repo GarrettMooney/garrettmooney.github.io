@@ -29,7 +29,7 @@ new-env name display_name packages='':
     fi
 
     echo "Creating Jupyter kernel '$KERNEL_NAME'..."
-    python -m ipykernel install --user --name "$KERNEL_NAME" --display-name "{{display_name}}"
+    uv run python -m ipykernel install --user --name "$KERNEL_NAME" --display-name "{{display_name}}"
 
     echo -e "\nSuccessfully created venv '$VENV_PATH' and kernel '$KERNEL_NAME'"
     echo "To use it in a post, add the following to the frontmatter:"
@@ -49,6 +49,6 @@ rm-env name:
 
     echo "Removing Jupyter kernel '$KERNEL_NAME'..."
     # The '|| true' is to prevent an error if the kernel doesn't exist
-    jupyter kernelspec uninstall -y "$KERNEL_NAME" || true
+    uvx jupyter kernelspec uninstall -y "$KERNEL_NAME" || true
 
     echo -e "\nSuccessfully removed venv and kernel for '{{name}}'"
