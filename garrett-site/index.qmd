@@ -1,5 +1,5 @@
 ---
-title: "blog"
+title: "garrett-site"
 listing:
   contents: posts
   sort: "date desc"

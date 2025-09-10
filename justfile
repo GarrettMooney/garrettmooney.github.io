@@ -4,4 +4,4 @@
 
 # compile and preview the blog
 preview:
-    quarto preview blog
+    quarto preview garrett-site
