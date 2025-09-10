@@ -55,14 +55,14 @@ jupyter: garrett-bayesian  # Uses the Bayesian environment
 
 ### Step 1: Create the Virtual Environment
 ```bash
-python3 -m venv .venv-{name}
+uv venv .venv-{name}
 ```
 
 ### Step 2: Install Dependencies
 ```bash
 source .venv-{name}/bin/activate
-pip install ipykernel jupyter PyYAML  # Always include these
-pip install {your-specific-packages}  # Add your specialized packages
+uv pip install ipykernel jupyter PyYAML  # Always include these
+uv pip install {your-specific-packages}  # Add your specialized packages
 ```
 
 ### Step 3: Create Jupyter Kernel
@@ -78,25 +78,25 @@ Add `jupyter: garrett-{name}` to your blog post's YAML frontmatter.
 
 ### Data Analysis Environment
 ```bash
-python3 -m venv .venv-data
+uv venv .venv-data
 source .venv-data/bin/activate
-pip install ipykernel jupyter PyYAML pandas polars duckdb matplotlib seaborn plotly
+uv pip install ipykernel jupyter PyYAML pandas polars duckdb matplotlib seaborn plotly
 python -m ipykernel install --user --name garrett-data --display-name "Data Analysis"
 ```
 
 ### Machine Learning Environment
 ```bash
-python3 -m venv .venv-ml
+uv venv .venv-ml
 source .venv-ml/bin/activate
-pip install ipykernel jupyter PyYAML scikit-learn tensorflow torch transformers datasets
+uv pip install ipykernel jupyter PyYAML scikit-learn tensorflow torch transformers datasets
 python -m ipykernel install --user --name garrett-ml --display-name "Machine Learning"
 ```
 
 ### Web Scraping Environment
 ```bash
-python3 -m venv .venv-scraping
+uv venv .venv-scraping
 source .venv-scraping/bin/activate
-pip install ipykernel jupyter PyYAML requests beautifulsoup4 selenium scrapy
+uv pip install ipykernel jupyter PyYAML requests beautifulsoup4 selenium scrapy
 python -m ipykernel install --user --name garrett-scraping --display-name "Web Scraping"
 ```
 
