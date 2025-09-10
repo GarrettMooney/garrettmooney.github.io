@@ -1,4 +1,0 @@
-Removing venv at .venv-test...
-Jupyter kernel 'garrett-test' not found, skipping removal.
-
-Successfully removed venv and (if it existed) kernel for 'test'
