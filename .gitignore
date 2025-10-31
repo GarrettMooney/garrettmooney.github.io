@@ -2,3 +2,5 @@
 .worktrees/
 
 _site/
+
+**/*.quarto_ipynb
