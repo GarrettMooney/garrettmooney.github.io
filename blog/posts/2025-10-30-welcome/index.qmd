@@ -1,0 +1,41 @@
+---
+title: "Welcome to My Blog"
+date: "2025-10-30"
+description: "An introduction to this blog and what to expect"
+categories: [meta]
+---
+
+Welcome! This is the first post on my new Quarto-powered blog.
+
+## What is Quarto?
+
+[Quarto](https://quarto.org/) is an open-source scientific and technical publishing system. It's great for:
+
+- Writing technical content with code
+- Creating beautiful, responsive websites
+- Supporting multiple programming languages
+- Built-in search and navigation
+
+## What to Expect
+
+I'll be writing about:
+
+- Software engineering practices
+- Data science and analysis
+- Tools and workflows
+- Whatever else I find interesting
+
+Stay tuned for more content!
+
+## Code Example
+
+Here's a simple Python example:
+
+```python
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+print(greet("World"))
+```
+
+This blog supports syntax highlighting for many languages out of the box.
