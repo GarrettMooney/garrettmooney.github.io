@@ -1,0 +1,9 @@
+---
+title: "Garrett Mooney"
+---
+
+Welcome to my blog and notes. I write about software engineering, data science, and other technical topics.
+
+## Recent Content
+
+Browse my [blog posts](blog/index.qmd) for in-depth articles, or check out my [notes](notes/index.qmd) for quick references and guides.
