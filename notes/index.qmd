@@ -1,0 +1,12 @@
+---
+title: "Notes"
+listing:
+  contents: "*.qmd"
+  sort: "title"
+  type: table
+  fields: [title, description]
+  sort-ui: false
+  filter-ui: false
+---
+
+Quick references, guides, and technical notes.
