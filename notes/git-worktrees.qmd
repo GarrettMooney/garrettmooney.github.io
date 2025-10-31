@@ -1,0 +1,38 @@
+---
+title: "Git Worktrees"
+description: "Quick reference for working with git worktrees"
+---
+
+Git worktrees allow you to check out multiple branches simultaneously in different directories.
+
+## Creating a Worktree
+
+```bash
+# Create new worktree with new branch
+git worktree add path/to/worktree -b branch-name
+
+# Create worktree from existing branch
+git worktree add path/to/worktree existing-branch
+```
+
+## Listing Worktrees
+
+```bash
+git worktree list
+```
+
+## Removing a Worktree
+
+```bash
+# Remove worktree directory first
+rm -rf path/to/worktree
+
+# Then prune the worktree reference
+git worktree prune
+```
+
+## Use Cases
+
+- Work on multiple features simultaneously
+- Keep a clean main branch checked out for quick reference
+- Test changes across different branches without stashing
