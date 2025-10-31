@@ -1,0 +1,28 @@
+/* Custom styles for Garrett Mooney's blog */
+
+/* Improve code block readability */
+pre {
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* Adjust navbar spacing */
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Make the title link more prominent */
+.navbar-title {
+  font-weight: 600;
+}
+
+/* Add some breathing room to main content */
+.quarto-title-block {
+  margin-bottom: 2rem;
+}
+
+/* Style the listing cards nicely */
+.quarto-listing-default .listing-item {
+  margin-bottom: 1.5rem;
+}
