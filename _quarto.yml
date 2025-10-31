@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Garrett Mooney"
+  navbar:
+    left:
+      - text: "Blog"
+        href: blog/index.qmd
+      - text: "Notes"
+        href: notes/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/garrettmooney
+  search: true
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
