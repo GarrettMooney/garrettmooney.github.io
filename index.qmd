@@ -1,5 +1,5 @@
 ---
-title: "Garrett Mooney"
+title: ""
 ---
 
 Welcome to my blog and notes. I write about software engineering, data science, and other technical topics.

@@ -11,6 +11,8 @@ website:
         href: blog/index.qmd
       - text: "Notes"
         href: notes/index.qmd
+      - text: "About"
+        href: about.qmd
     right:
       - icon: github
         href: https://github.com/garrettmooney

@@ -1,0 +1,19 @@
+---
+title: "About Me"
+---
+
+## Garrett Mooney
+
+TODO: Add bio and background information here.
+
+### Background
+
+TODO: Add professional background and experience.
+
+### Interests
+
+TODO: Add technical interests and areas of focus.
+
+### Contact
+
+TODO: Add contact information and social links.

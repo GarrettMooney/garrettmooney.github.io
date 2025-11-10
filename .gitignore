@@ -1,5 +1,6 @@
 /.quarto/
 .worktrees/
+.playwright-mcp/
 
 _site/
 
