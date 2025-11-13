@@ -1,0 +1,39 @@
+---
+title: "Ser vs Estar"
+---
+
+see [ser vs estar](https://docs.google.com/document/d/1oAjg31s8JpMNeZxpbdmZiSbQQBCSwjoRvIPrqCEz9-I/edit?tab=t.0)
+
+| Pronoun      | Ser        | Estar      |
+|--------------|------------|------------|
+| I           | soy        | estoy      |
+| you           | eres       | estás      |
+| you formal | es         | está       |
+| he / she / it | es         | está       |
+| we  | somos      | estamos    |
+| you all | son    | están      |
+| they | son    | están      |
+
+
+- ser: 
+    - "**What** or **who** is something or someone?"
+        - Es mi hermana.
+        - Es un libro.
+        - Somos hermanos.
+- estar: 
+    - "**Where** is someone or something?"
+        - La familia esta aqui.
+        - La casa esta cerca del parque.
+        - Estan en la casa.
+    - "**What** is someone doing?"
+        - Estan hablando.
+        - Estamos cocinando.
+- ser o estar:
+    - "feelings, states and conditions" -> estar
+        - Mi amiga esta bien hoy.
+        - Estoy feliz hoy porque tengo el dia libre.
+    - "distinctive features and characteristics" -> ser
+        - Mi amiga es buena.
+        - La casa es bonita.
+
+

@@ -1,10 +1,16 @@
 ---
 title: "Notes"
 listing:
-  contents: "*.qmd"
-  sort: "title"
+  contents:
+    - docker-basics.qmd
+    - git-worktrees.qmd
+    - regex.qmd
+    - spanish/index.qmd
+    - python/index.qmd
+    - linux/index.qmd
   type: table
   fields: [title, description]
+  sort: "title"
   sort-ui: false
   filter-ui: false
 ---

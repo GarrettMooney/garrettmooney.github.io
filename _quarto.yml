@@ -17,6 +17,33 @@ website:
       - icon: github
         href: https://github.com/garrettmooney
   search: true
+  sidebar:
+    - id: notes
+      title: "Notes"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        - notes/index.qmd
+        - section: "Spanish"
+          href: notes/spanish/index.qmd
+          contents:
+            - notes/spanish/grammar.qmd
+            - notes/spanish/verbs.qmd
+        - section: "Python"
+          href: notes/python/index.qmd
+          contents:
+            - notes/python/decorators.qmd
+            - notes/python/list-comprehensions.qmd
+        - section: "Linux"
+          href: notes/linux/index.qmd
+          contents:
+            - notes/linux/ssh.qmd
+        - section: "Development"
+          contents:
+            - notes/git-worktrees.qmd
+        - text: "---"
+        - notes/docker-basics.qmd
+        - notes/regex.qmd
 
 format:
   html:

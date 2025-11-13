@@ -1,0 +1,46 @@
+---
+title: "SSH Tips"
+description: "Useful SSH commands and configuration"
+---
+
+## Basic Connection
+
+```bash
+ssh user@hostname
+```
+
+## SSH Config File
+
+Create `~/.ssh/config` for easier connections:
+
+```
+Host myserver
+    HostName example.com
+    User myusername
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+```
+
+Then connect with:
+```bash
+ssh myserver
+```
+
+## SSH Keys
+
+Generate a new key:
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Copy key to server:
+```bash
+ssh-copy-id user@hostname
+```
+
+## Port Forwarding
+
+Local port forwarding:
+```bash
+ssh -L 8080:localhost:80 user@hostname
+```

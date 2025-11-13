@@ -1,0 +1,48 @@
+---
+title: "Regular Expressions"
+description: "Common regex patterns and syntax"
+---
+
+## Basic Patterns
+
+| Pattern | Description |
+|---------|-------------|
+| `.` | Any single character |
+| `*` | Zero or more of previous |
+| `+` | One or more of previous |
+| `?` | Zero or one of previous |
+| `^` | Start of line |
+| `$` | End of line |
+
+## Character Classes
+
+```regex
+[abc]       # Any of a, b, or c
+[^abc]      # Not a, b, or c
+[a-z]       # Any lowercase letter
+[A-Z]       # Any uppercase letter
+[0-9]       # Any digit
+\d          # Any digit
+\w          # Any word character
+\s          # Any whitespace
+```
+
+## Examples
+
+### Email Validation
+
+```regex
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+```
+
+### Phone Numbers
+
+```regex
+^\+?1?\d{9,15}$
+```
+
+### URLs
+
+```regex
+https?://[^\s]+
+```

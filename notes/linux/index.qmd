@@ -1,0 +1,13 @@
+---
+title: "Linux"
+description: "Linux command line tips and tricks"
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, description]
+  sort: "title"
+  sort-ui: false
+  filter-ui: false
+---
+
+Notes on Linux system administration and command line usage.

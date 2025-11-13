@@ -1,0 +1,59 @@
+---
+title: "Docker Basics"
+description: "Essential Docker commands and concepts"
+---
+
+## What is Docker?
+
+Docker is a platform for developing, shipping, and running applications in containers.
+
+## Basic Commands
+
+### Images
+
+```bash
+# List images
+docker images
+
+# Pull an image
+docker pull ubuntu:latest
+
+# Remove an image
+docker rmi image_name
+```
+
+### Containers
+
+```bash
+# Run a container
+docker run -it ubuntu bash
+
+# List running containers
+docker ps
+
+# List all containers
+docker ps -a
+
+# Stop a container
+docker stop container_id
+
+# Remove a container
+docker rm container_id
+```
+
+## Dockerfile
+
+Basic Dockerfile structure:
+
+```dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]
+```

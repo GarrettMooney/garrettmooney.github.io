@@ -1,0 +1,13 @@
+---
+title: "Spanish"
+description: "Notes on learning Spanish"
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, description]
+  sort: "title"
+  sort-ui: false
+  filter-ui: false
+---
+
+Quick references, vocabulary, and grammar notes for Spanish language learning.
